@@ -164,3 +164,44 @@ body {
   background-color: #e0e0e0; /* Slightly darker background on hover */
   color: #333; /* Darker text color on hover */
 }
+
+
+/*Responsive Design */
+@media (max-width: 768px) {
+  .newsletter-form {
+    grid-template-columns: 1fr; /* Single column layout */
+    padding: 20px;
+  }
+
+  .right-column {
+    display: none; /* Hide the right column */
+  }
+}
+
+@media (max-width: 480px) {
+  .newsletter-form {
+    padding: 10px;
+  }
+
+  .column {
+    padding: 10px;
+  }
+
+  .left-column h2 {
+    font-size: 1.2em;
+  }
+
+  .left-column p, .left-column ul {
+    font-size: 0.9em;
+  }
+
+  #signup-form input[type="email"], #signup-form button {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right-column {
+    background-size: contain; /* Adjust the size for smaller screens */
+  }
+}
