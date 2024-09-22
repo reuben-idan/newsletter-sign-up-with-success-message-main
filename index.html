@@ -11,39 +11,41 @@
 </head>
 
 <body>
-  <div class="newsletter-container"> <div class="newsletter-form"> <div class="column left-column">
-    <h2>Stay updated!</h2>
-    <p>Join 60,000+ product managers receiving monthly updates on:</p>
-    <ul>
-      <li>Product discovery and building what matters</li>
-      <li>Measuring to ensure updates are a success</li>
-      <li>And much more!</li>
-    </ul>
-    <form id="signup-form">
-      <label for="email">Email address</label>
-      <input type="email" id="email" name="email" placeholder="email@company.com" required>
-      <button type="submit">Subscribe to monthly newsletter</button>
-    </form>
-    <div class="success-message">
-      <h3>Thanks for subscribing!</h3>
-      <p>A confirmation email has been sent to ash@loremcompany.com. Please open it and click the button inside to confirm your subscription.</p>
-      <button type="button" class="dismiss-button">Dismiss message</button>
-    </div>
-  </div>
-      <div class="column right-column">
+  <div class="newsletter-container">
+    <div class="newsletter-form">
+      <div class="column left-column">
+        <h2>Stay updated!</h2>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <!-- modify this form HTML and place wherever you want your form -->
+        <!-- modify this form HTML and place wherever you want your form -->
+<form action="https://formspree.io/f/xnnakbzk" method="POST" class="newsletter-signup-form">
+  <label for="email">Your email:</label>
+  <input type="email" id="email" name="email" placeholder="ash@loremcompany.com" required>
+  <button type="submit" class="subscribe-button">Subscribe to monthly newsletter</button>
+</form>
 
-        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop"> 
+        <div class="success-message" style="display: none;">
+          <h3>Thanks for subscribing!</h3>
+          <p> A confirmation email has been sent <span id="email"></span>
+            Please open it and click the button inside to confirm your subscription.</p>
+          <button type="button" class="dismiss-button">Dismiss message</button>
         </div>
+      </div>
+      <div class="column right-column">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      </div>
     </div>
-
-   
   </div>
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Reuben Idan</a>.
   </div>
-
 </body>
 
 </html>
